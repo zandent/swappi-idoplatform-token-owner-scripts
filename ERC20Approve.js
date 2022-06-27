@@ -40,10 +40,10 @@ async function ethTransact(data, to = undefined, nonce, value = 0) {
 async function run() {
   tokenOwner = w3.eth.accounts.privateKeyToAccount(specs.tokenOwnerKey).address;
   let nonce = await w3.eth.getTransactionCount(tokenOwner);
-  data = idoplatformContract.instance.methods
-    .addIDOToken(newTokenContract.instance.options.address)
+  data = newTokenContract.instance.methods
+    .approve(idoplatformContract.instance.options.address, amtIncludingLP)
     .encodeABI();
-  await ethTransact(data, idoplatformContract.instance.options.address, nonce);
+  await ethTransact(data, newTokenContract.instance.options.address, nonce);
 }
 
 run();

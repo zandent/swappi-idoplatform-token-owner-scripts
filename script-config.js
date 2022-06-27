@@ -4,8 +4,8 @@ const specs = {
   amt: '1000000000000000000',
   ratioForLP: '20',
 
-  testNetUrl: 'http://evmtestnet.confluxrpc.com',
-  mainNetUrl: 'http://evm.confluxrpc.com',
+  nodeUrl: 'http://evmtestnet.confluxrpc.com',
+  // nodeUrl: 'http://evm.confluxrpc.com',
   idoplatformAddr: "0xbd990180bf0a276c981bd698fd1418d81ff28c61",
 };
 
