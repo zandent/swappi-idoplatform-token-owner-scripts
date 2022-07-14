@@ -10,7 +10,7 @@ idoplatformContract.instance.options.address = specs.idoplatformAddr;
 let newTokenContract = require(`./abi_files/IERC20.json`);
 newTokenContract.instance = new w3.eth.Contract(newTokenContract.abi);
 newTokenContract.instance.options.address = specs.newTokenAddr;
-
+let newTokenIDOID = specs.newTokenIDOID;
 let amt = specs.amt;
 let ratioForLP = specs.ratioForLP;
 let amtIncludingLP = (BigNumber.from(amt).mul(100+ratioForLP).div(100)).toHexString();// amt * (1+ratioForLP%)
@@ -41,7 +41,7 @@ async function run() {
   tokenOwner = w3.eth.accounts.privateKeyToAccount(specs.tokenOwnerKey).address;
   let nonce = await w3.eth.getTransactionCount(tokenOwner);
   data = idoplatformContract.instance.methods
-    .addIDOToken(newTokenContract.instance.options.address)
+    .addIDOToken(newTokenContract.instance.options.address, newTokenIDOID)
     .encodeABI();
   await ethTransact(data, idoplatformContract.instance.options.address, nonce);
 }
