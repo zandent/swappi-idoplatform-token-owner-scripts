@@ -10,6 +10,6 @@ $ yarn
 4. The entry `newTokenIDOID` is 1 as default. You don't need to change it. If some mistakes happened before transferring into IDO Platform, the value will be changed to `2`.
 5. Run the scripts to send two transactions. First transaction is to let your new token approve IDO Platform Contract to trade your tokens. Once the transaction is confirmed, the second transaction is to let IDO Platform Contract receive the token and start IDO.
 ```bash
-$ node ERC20Approve.js
-$ node addIDOToken.js
+$ yarn node ERC20Approve.js
+$ yarn node addIDOToken.js
 ```
