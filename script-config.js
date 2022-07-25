@@ -5,9 +5,9 @@ const specs = {
   amt: '1000000000000000000',
   ratioForLP: '20',
 
-  nodeUrl: 'http://evmtestnet.confluxrpc.com',
-  // nodeUrl: 'http://evm.confluxrpc.com',
-  idoplatformAddr: "0xEDE132C78dD6C88Bbc017ba2EC7a0A390a957065",
+  //nodeUrl: 'http://evmtestnet.confluxrpc.com',
+  nodeUrl: 'http://evm.confluxrpc.com',
+  idoplatformAddr: "0x335d47152586f16c1b6eb6cd3bcffb8b07abf08e",
 };
 
 function delay(time) {
