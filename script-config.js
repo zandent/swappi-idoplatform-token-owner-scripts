@@ -1,8 +1,8 @@
 const specs = {
   tokenOwnerKey: "",
-  newTokenAddr: "",
+  newTokenAddr: "0xbA70Fc92E65d7bE07799c646c2BA4e9647bCba01",
   newTokenIDOID: '1',
-  amt: '1000000000000000000000',
+  amt: '50000000000000000000000000',
   ratioForLP: '10',
 
   //nodeUrl: 'http://evmtestnet.confluxrpc.com',
