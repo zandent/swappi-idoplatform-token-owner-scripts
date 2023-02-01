@@ -1,8 +1,9 @@
+const Web3 = require('web3');
 const specs = {
   tokenOwnerKey: "0x",
-  newTokenAddr: "0xa4B59aA3De2af57959C23E2c9c89a2fCB408Ce6A",
+  newTokenAddr: "0xFE197E7968807B311D476915DB585831B43A7E3b",
   newTokenIDOID: '1',
-  amt: '2000000000000000000000000',
+  amt: Web3.utils.toWei('3000'),
   ratioForLP: '0',
 
   //nodeUrl: 'http://evmtestnet.confluxrpc.com',
